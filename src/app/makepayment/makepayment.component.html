@@ -1,0 +1,87 @@
+<div class="book-appoinment">
+  <div class="container">
+      <div class="row">
+          <div class="col-6">
+              <div class="appoinment-content">
+                  <img src="../../assets/img/doctors.jpg" alt="" style="width: 85%;">
+                  <div class="emergency">
+                      <h2><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+                  </div>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="appoinment-wrap mt-5">
+                  <h2>Payment</h2>
+                  <p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                  <div> 
+                      <form action="">
+                          <div class="row d-flex form-group">
+                            <select name="" id="" #mode (change)="pay(mode.value)" class = "mb-3 form-control">
+                              <option value="">MODE OF PAYMENT</option>
+                              <option value="Enter the phone number">PHONE NO</option>
+                              <option value="Enter the Acc number">ACC NO</option>
+                              <option value="Enter the UPI ID">UPI</option>
+                            </select>
+                            <p>{{paymentType}}</p> 
+                              <div class="col-6 form-group">
+                                <input type="text" class ="mb-3 form-control" #payment value="Enter">
+                              </div>
+                              <div class="col-6 form-group">
+                                <input type="button" value="Verify" (click)=check(payment.value) class="mb-3 form-control">
+                              </div>
+                              <div class="col-4">
+                                <label class = "mb-3">Enter the Total amount:</label>
+                              </div>
+                              <div class="col-8 form-group">
+                                <input type="text" class = "mb-3 form-control" value = {{totalPayment}}>
+                              </div>
+                              <div class="col-4">
+                                <label class = "mb-3">Amount to pay</label>
+                              </div>
+                              <div class="col-8 form-group">
+                                <input type="text" class = "mb-3 form-control" placeholder="Enter the amount to be paid" #topay/>
+                              </div>
+                              <div class="col-6 form-group">
+                                <input type="button" value="PAY" (click)="paydone(topay.value)" class="form-inline p-2 btn btn-main">
+                            </div>
+                            <div class="col-6 form-group">
+                              <input type="reset" value="RESET"  class="form-inline p-2 btn btn-main">
+                            </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<form action="">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 label-align">
+          <select name="" id="" #mode (change)="pay(mode.value)" class = "mb-3">
+            <option value="">MODE OF PAYMENT</option>
+            <option value="Enter the phone number">PHONE NO</option>
+            <option value="Enter the Acc number">ACC NO</option>
+            <option value="Enter the UPI ID">UPI</option>
+          </select>
+          <p>{{ paymentType }}</p>
+          <input type="text" class ="mb-3" #payment /><br><input type="button" value="Verify" (click)=check(payment.value)><br>
+          <label class = "mb-3">Total amount</label><input type="text" class = "mb-3" value = {{totalPayment}}>
+          <label class = "mb-3">Amount to pay</label>
+          <input type="text" class = "mb-3" placeholder="Enter the amount to be paid" #topay/>
+          <!-- <label class = "mb-3">Remaining Balance</label><input type="text" class = "mb-3" value = {{remaining}}> -->
+          <div class = "mb-3">
+              <input type="button" value="PAY" (click)="paydone(topay.value)">
+              <input type="reset" value="RESET">
+          </div>
+          <div>
+              <!-- <h3>{{paymentSuccess}}</h3> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>

@@ -1,0 +1,26 @@
+.nav-bar .nav-item:hover{
+    color: #e12454;
+}
+
+footer{
+    background-color: #f4f9fc;
+}
+.footer-content{
+    padding: 100px 0;
+}
+.footer-content p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #6f8ba4;
+}
+.footer-content span{
+    font-size: 21px;
+    line-height: 30px;
+    color: #223a66;
+}
+.footer-content li{
+    font-size: 16px;
+    line-height: 35px;
+    color: #6f8ba4;
+    list-style: none;
+}

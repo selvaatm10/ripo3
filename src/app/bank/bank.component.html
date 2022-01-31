@@ -1,0 +1,55 @@
+<div class="book-appoinment">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="appoinment-content">
+                    <img src="../../assets/img/doctors.jpg" alt="" style="width: 85%;">
+                    <div class="emergency">
+                        <h2><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="appoinment-wrap mt-5">
+                    <h2>Add account</h2>
+                    <p>Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                    <div>
+                        <form action="">
+                            <div class="row d-flex">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Enter the name" #name>
+                                </div> 
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Enter the phone number" #phone>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Acc Number" #acc>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="UPIid@ybl" #upi>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Initial balance" #initial>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Remaining balance" #remaining>
+                                </div>
+                                <div class="col-6" form-group>
+                                    <input type="button" value="create"  class="form-inline p-2 btn btn-main" (click)= create(name.value,phone.value,acc.value,upi.value,initial.value,remaining.value)>
+                                </div>
+                                <div class="col-6">
+                                    <input  type="reset" value="reset" class="form-inline p-2 btn btn-main">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <app-makepayment></app-makepayment> -->
+
+
+<router-outlet></router-outlet>

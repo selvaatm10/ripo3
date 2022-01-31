@@ -1,0 +1,53 @@
+.fd-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-appoinment{
+    margin: 100px 0;
+}
+
+.appoinment-content{
+    position: relative;
+}
+.appoinment-content img{
+    width: 85%;
+}
+.emergency h2{
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.form-group{
+    padding-bottom: 30px;
+}
+.form-group .form-control{
+    background: #f4f9fc;
+    height: 55px;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+.form-group-2 .form-control{
+    background: #f4f9fc;
+    height: 55px;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+.appoinment-wrap h2{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    color: #223a66;
+}
+.appoinment-wrap p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6f8ba4;
+}
+.btn-main{
+    background: #223a66;
+    color: #fff;
+    border-color: #223a66;
+    margin-top: 20px;
+    width: 150px;
+}
